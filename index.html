@@ -13,14 +13,14 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">CPA Gadgets Hub</a>
+        <a class="navbar-brand" href="#">CPA Gadgets Hub</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="products.html">Products</a>
@@ -31,6 +31,11 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">
+                Cart <span class="badge bg-secondary" id="cart-count">0</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -38,33 +43,53 @@
 
     <div class="container my-5">
       <div class="p-5 text-center bg-light">
-        <h1 class="mb-3">CPA Gadgets Hub</h1>
-        <h4 class="mb-3">Your one-stop shop for the latest mobile phones and accessories.</h4>
+        <h1 class="mb-3">Welcome to CPA Gadgets Hub</h1>
+        <h4 class="mb-3">Your one-stop shop for the latest mobile gadgets</h4>
         <a class="btn btn-primary" href="products.html" role="button">Shop Now</a>
       </div>
     </div>
 
     <div class="container">
+      <h2 class="text-center mb-4">Featured Products</h2>
       <div class="row">
         <div class="col-md-4">
-          <h2>Latest Phones</h2>
-          <p>Check out our wide range of the latest smartphones from top brands.</p>
-          <a class="btn btn-secondary" href="products.html" role="button">View Details &raquo;</a>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/47261/pexels-photo-47261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Smartphone">
+            <div class="card-body">
+              <h5 class="card-title">Latest Smartphone</h5>
+              <p class="card-text">The latest and greatest smartphone with a stunning display and a powerful camera.</p>
+              <p class="card-text"><strong>$999</strong></p>
+              <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Hot Deals</h2>
-          <p>Get the best deals and discounts on phones and accessories.</p>
-          <a class="btn btn-secondary" href="products.html" role="button">View Details &raquo;</a>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Wireless Headphones">
+            <div class="card-body">
+              <h5 class="card-title">Wireless Headphones</h5>
+              <p class="card-text">Immerse yourself in high-fidelity sound with these noise-cancelling wireless headphones.</p>
+              <p class="card-text"><strong>$199</strong></p>
+              <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+            </div>
+          </div>
         </div>
         <div class="col-md-4">
-          <h2>Top Accessories</h2>
-          <p>Explore our collection of phone cases, chargers, headphones, and more.</p>
-          <a class="btn btn-secondary" href="products.html" role="button">View Details &raquo;</a>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/2653353/pexels-photo-2653353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Phone Case">
+            <div class="card-body">
+              <h5 class="card-title">Phone Case</h5>
+              <p class="card-text">Protect your new phone with this stylish and durable phone case.</p>
+              <p class="card-text"><strong>$29</strong></p>
+              <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>
